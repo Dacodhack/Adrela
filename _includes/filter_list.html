@@ -1,0 +1,19 @@
+<ul class="filter-list">
+
+    {% for livrable_pair in site.data.livrables %}
+	    {% assign livrable_id = livrable_pair[0] %}
+	    {% assign livrable = livrable_pair[1] %}
+	    {% if include.bin.livrables contains livrable_id %}
+		    <li><a href="{{ include.bin.url }}#{{ livrable_id }}">{{ livrable.label }}</a></li>
+	    {% endif %}
+    {% endfor %}
+
+    {% for tag_pair in site.data.tags %}
+	    {% assign tag_id = tag_pair[0] %}
+	    {% assign tag = tag_pair[1] %}
+	    {% if include.bin.tags contains tag_id %}
+		    <li><a href="{{ include.bin.url }}#{{ tag_id }}">{{ tag.label }}</a></li>
+	    {% endif %}
+    {% endfor %}
+
+</ul>

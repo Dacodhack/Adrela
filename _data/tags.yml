@@ -1,0 +1,43 @@
+Authentification:
+  label: Authentification 
+  description: Gestion des processus d'identification et d'authentification des utilisateurs pour accéder aux systèmes et aux données sensibles.
+
+Données:
+  label: Données 
+  description: Gestion, stockage, et manipulation des informations et des données au sein de l'environnement informatique.
+
+Réseaux:
+  label: Réseaux 
+  description: Configuration, gestion et maintenance des infrastructures réseau permettant la communication entre les différents composants du système.
+
+Systèmes:
+  label: Systèmes 
+  description: Administration, configuration et maintenance des systèmes informatiques, y compris les serveurs et les postes de travail.
+
+Gestion des Menaces:
+  label: Gestion des Menaces 
+  description: Mise en place de stratégies pour anticiper, détecter, répondre et prévenir les menaces potentielles à la sécurité informatique.
+
+Sensibilisation:
+  label: Sensibilisation 
+  description: Programme visant à éduquer et sensibiliser les utilisateurs aux bonnes pratiques de sécurité informatique.
+
+Surveillance:
+  label: Surveillance 
+  description: Surveillance continue des activités informatiques pour détecter et prévenir les incidents de sécurité.
+
+Physique:
+  label: Physique 
+  description: Sécurité physique des équipements informatiques, y compris l'accès restreint aux locaux et la protection du matériel.
+
+Politiques:
+  label: Politiques 
+  description: Élaboration et mise en œuvre de politiques de sécurité définissant les règles et les procédures à suivre pour garantir la sécurité informatique.
+
+Cloud:
+  label: Cloud 
+  description: Gestion des services et des données stockées dans des environnements cloud, avec un accent sur la sécurité des informations dématérialisées.
+
+Information Sensible:
+  label: Information Sensible 
+  description: Traitement, stockage et protection des informations sensibles nécessitant une attention particulière en termes de confidentialité et de sécurité.

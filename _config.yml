@@ -1,0 +1,16 @@
+---
+title: Adrela
+
+exclude: ['/scripts', '/Gemfile', '/Makefile', '/README.md']
+
+permalink: pretty
+
+collections:
+  adrela:
+    output: true
+
+defaults:
+  - scope:
+      path: '_adrela'
+    values:
+      layout: bin
