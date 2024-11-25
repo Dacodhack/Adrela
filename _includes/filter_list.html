@@ -4,7 +4,7 @@
 	    {% assign livrable_id = livrable_pair[0] %}
 	    {% assign livrable = livrable_pair[1] %}
 	    {% if include.bin.livrables contains livrable_id %}
-		    <li><a href="{{ include.bin.url }}#{{ livrable_id }}">{{ livrable.label }}</a></li>
+		    <li><a href="/#+{{ livrable_id }}">{{ livrable.label }}</a></li>
 	    {% endif %}
     {% endfor %}
 
@@ -12,7 +12,7 @@
 	    {% assign tag_id = tag_pair[0] %}
 	    {% assign tag = tag_pair[1] %}
 	    {% if include.bin.tags contains tag_id %}
-		    <li><a href="{{ include.bin.url }}#{{ tag_id }}">{{ tag.label }}</a></li>
+		    <li><a href="/#+{{ tag_id }}">{{ tag.label }}</a></li>
 	    {% endif %}
     {% endfor %}
 
