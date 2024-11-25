@@ -1,13 +1,14 @@
 ---
 ---
-$accent: #01b9c5;
-$lighter: #f4fff4;
-$marked: #b4d7ff;
-$hover: #46c6ff;
+
+$accent: #003b55;
+$lighter: #46c6ff;
+$marked: #46c6ff;
+$hover: #003b55;
 $dark: #292a2d;
 $darkText: #a9a9b3;
 $test: #ff0000;
-$blueColor: #01b9c5;
+$greenColor: #003b55;
 // layout
 
 $column-width: 800px;
@@ -43,7 +44,7 @@ body {
 code {
     padding: 0.15em 0.25em;
     border-radius: 0.25em;
-    color: $blueColor;
+    color: $greenColor;
 }
 
 pre {
@@ -58,7 +59,7 @@ pre {
 }
 
 a:link, a:visited {
-    color: $blueColor;
+    color: $greenColor;
 }
 
 a:hover {
@@ -180,7 +181,6 @@ h2, h3, h4, h5, h5 {
     li {
         display: inline-block;
 
-
         a {
             display: inline-block;
             padding: 0.25em 0.5em;
@@ -189,7 +189,7 @@ h2, h3, h4, h5, h5 {
         }
 
         a:link, a:visited {
-            color: $blueColor;
+            color: $greenColor;
             text-decoration: none;
         }
 
@@ -208,7 +208,7 @@ h2, h3, h4, h5, h5 {
             margin: 0.2em 0;
             border: 1px solid $accent;
             background: $marked;
-            color: $blueColor;
+            color: $greenColor;
             text-decoration: none;
         }
 	

@@ -1,4 +1,18 @@
 ANSSI-PA-022:
   label: ANSSI-PA-022
-  description: Recommandations relatives à l’administration sécurisée des systèmes d’information
-
+  descrption: Recommandations relatives à l'administration sécurisée des SI
+ANSSI-PA-085:
+  label: ANSSI-PA-085
+  descrption: Recommandations pour la protection des systèmes d'information essentiels
+ANSSI-PA-099:
+  label: ANSSI-PA-099
+  description: Recommandations relatives à l’administration sécurisée des systèmes d’information reposant sur Microsoft Active Directory
+ANSSI-PA-101:
+  label: ANSSI-PA-101
+  description: Recommandations pour les architectures des interconnexions multiniveaux
+ANSSI-PA-102:
+  label: ANSSI-PA-102
+  description: Recommandations de sécurité pour un système d’IA générative
+ANSSI-PG-075:
+  label: ANSSI-PG-075
+  description: Recommandations pour les architectures des systèmes d'information sensibles ou Diffusion Restreinte - v1.2

@@ -5,23 +5,55 @@ layout: common
 {% capture bin_name %}{% include get_bin_name path=page.path %}{% endcapture %}
 {% include page_title.html title=bin_name %}
 {% include filter_list.html bin=page %}
-
 <h1>Recommandation:</h1>
-<a href="javascript:void(0)" onClick="copyFunction_com()" style="float: right; margin-bottom: -10px;"><img src="/assets/copy-button.svg" alt="Copy" title="Copy" id="code_img"/></a>
 <ul class="examples">
-    <li>
-	<pre><code id="code_text">{{ page.recommandation | escape }}</code></pre>
+    <li>	
+		<pre><a href="javascript:void(0)" onClick="copyFunction_R()" style="float: right; margin-bottom: -10px;"><img src="/assets/copy-button.svg" alt="Copy" title="Copy" id="code_img"/></a><code id="reco_text">{{ page.Titre_Reco | escape }}</code></pre>
     </li>
 
 </ul>
 
 <h2>Description</h2>
-{{ page.description | markdownify | newline_to_br }}
+{{ page.Recommandation | markdownify | newline_to_br }}
 
-<h2>Tags:</h2>
-{% for tag in page.tags %}
-<a href="/#+{{ tag }}">{{ tag }}</a>
-{% endfor %}
+<h2>Tags</h2>
+{% include filter_list.html bin=page %}
+
+
+<h2>Vulnérabilité</h2>
+<div class="container">
+	<div class="section">
+		<div class="section-title">
+			Vulnérabilité :
+		</div>
+		<div class="section-content">
+			<a href="javascript:void(0)" onClick="copyFunction_V()" style="float: right; margin-bottom: -10px;"><img src="/assets/copy-button.svg" alt="Copy" title="Copy" id="code_img"/></a>
+			<reco id="vuln_text">{{ page.Titre_Vuln | escape }}</reco>
+		</div>
+	</div>
+	<div class="section">
+		<div class="section-title">Description :</div>
+		<div class="section-content">
+			{{ page.Vulnerabilit_ | escape }}
+		</div>
+	</div>
+	<div class="section">
+		<div class="risques">
+			<div class="bloc">
+				<div class="section-title">Impact :</div>
+				<div class="impact-probability">
+					<div>{{ page.Impact  }}</div>
+				</div>
+			</div>
+			<div class="bloc">
+				<div class="section-title">Probabilité :</div>
+				<div class="impact-probability">
+					<div>{{ page.Probabilit_  }}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <h2>Sources:</h2>
 {% for source in page.sources %}
@@ -29,16 +61,27 @@ layout: common
 <br>
 <br>
 {% endfor %}
+
 <script>
+	function copyFunction_R() {
+		var copyCommand = document.getElementById("reco_text");
 
-function copyFunction_com() {
-	 var copyCommand = document.getElementById("code_text");
+		navigator.clipboard.writeText(copyCommand.innerText.replace(/\n+$/, "")).then(() => {
+			document.getElementById("code_img").alt = "Copied";
+			document.getElementById("code_img").title = "Copied";
+		}, () => {
+			console.log("copy failed");
+		});
+	}
 
-	 navigator.clipboard.writeText(copyCommand.innerText.replace(/\n+$/, "")).then(() => {
-		 document.getElementById("code_img").alt = "Copied";
-		 document.getElementById("code_img").title = "Copied";
-	 }, () => {
-		 console.log("copy failed");
-	 });
-}
+	function copyFunction_V() {
+		var copyCommand = document.getElementById("vuln_text");
+
+		navigator.clipboard.writeText(copyCommand.innerText.replace(/\n+$/, "")).then(() => {
+			document.getElementById("code_img").alt = "Copied";
+			document.getElementById("code_img").title = "Copied";
+		}, () => {
+			console.log("copy failed");
+		});
+	}
 </script>

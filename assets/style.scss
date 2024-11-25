@@ -1,10 +1,10 @@
 ---
 ---
-$accent: #01b9c5;
-$lighter: #c4defc;
-$marked: #b4d7ff;
-$hover: #01b9c5;
 
+$accent: #003b55;
+$lighter: #46c6ff;
+$marked: #46c6ff;
+$hover: #003b55;
 
 // layout
 
@@ -176,7 +176,6 @@ h2, h3, h4, h5, h5 {
     li {
         display: inline-block;
 
-
         a {
             display: inline-block;
             padding: 0.25em 0.5em;
@@ -335,3 +334,48 @@ h2, h3, h4, h5, h5 {
   .slider.round:before {
     border-radius: 50%;
   }
+
+  // vuln
+  .container {
+    width: 600px;
+    border: 2px solid #f44;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+.section {
+    margin-bottom: 15px;
+}
+.section-title {
+    font-weight: bold;
+    color: #f44; /* Couleur rouge */
+    margin-bottom: 5px;
+}
+.section-content {
+    border: 1px solid #f44; /* Bordure rouge */
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff3f3; /* Fond rose clair */
+}
+.risques{
+    display: flex;
+}
+.bloc{
+    flex: content;
+}
+.impact-probability {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.impact-probability div {
+    padding: 5px;
+    border: 1px solid #f44; /* Bordure rouge */
+    border-radius: 4px;
+    background-color: #fff3f3; /* Fond rose clair */
+    width: 45%;
+    text-align: center;
+}
