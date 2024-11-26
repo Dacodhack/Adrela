@@ -1,9 +1,9 @@
 ANSSI-PA-022:
   label: ANSSI-PA-022
-  descrption: Recommandations relatives à l'administration sécurisée des SI
+  description: Recommandations relatives à l'administration sécurisée des SI
 ANSSI-PA-085:
   label: ANSSI-PA-085
-  descrption: Recommandations pour la protection des systèmes d'information essentiels
+  description: Recommandations pour la protection des systèmes d'information essentiels
 ANSSI-PA-099:
   label: ANSSI-PA-099
   description: Recommandations relatives à l’administration sécurisée des systèmes d’information reposant sur Microsoft Active Directory
